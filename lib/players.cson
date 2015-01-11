@@ -1,0 +1,5 @@
+spotify:
+  name: 'spotify',
+  identity: 'Spotify Player',
+  supportedUriSchemes: ['spotify'],
+  supportedMimeTypes: []
