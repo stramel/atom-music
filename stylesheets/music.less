@@ -1,14 +1,14 @@
 // Variables ---------------------------------------------
 @import "ui-variables";
 
-// Rdio --------------------------------------------------
-.rdio {
+// Atom Music --------------------------------------------------
+.music {
   display: inline-block;
 
   a { color: @text-color-subtle }
 }
 
-.rdio-container {
+.music-container {
   display: none;
   max-width: 300px;
   white-space: nowrap;
@@ -19,7 +19,7 @@
 }
 
 // Sound bars --------------------------------------------
-.rdio-sound-bars {
+.music-sound-bars {
   display: inline-block;
   position: relative;
   margin-right: .4em;
@@ -27,7 +27,7 @@
   overflow: hidden;
 
   &[data-state="paused"] {
-    .rdio-sound-bar {
+    .music-sound-bar {
       -webkit-animation-play-state: paused;
     }
   }
@@ -35,19 +35,19 @@
   &[data-hidden] { display: none }
 }
 
-.rdio-sound-bar + .rdio-sound-bar { margin-left: 1px }
-.rdio-sound-bar {
+.music-sound-bar + .music-sound-bar { margin-left: 1px }
+.music-sound-bar {
   display: inline-block;
   width: 3px; height: 3px;
   background: @text-color-subtle;
   -webkit-animation: sound 400ms linear infinite alternate;
 }
 
-.rdio-sound-bar:nth-child(1) { -webkit-animation-duration: 274ms }
-.rdio-sound-bar:nth-child(2) { -webkit-animation-duration: 233ms }
-.rdio-sound-bar:nth-child(3) { -webkit-animation-duration: 207ms }
-.rdio-sound-bar:nth-child(4) { -webkit-animation-duration: 258ms }
-.rdio-sound-bar:nth-child(5) { -webkit-animation-duration: 200ms }
+.music-sound-bar:nth-child(1) { -webkit-animation-duration: 274ms }
+.music-sound-bar:nth-child(2) { -webkit-animation-duration: 233ms }
+.music-sound-bar:nth-child(3) { -webkit-animation-duration: 207ms }
+.music-sound-bar:nth-child(4) { -webkit-animation-duration: 258ms }
+.music-sound-bar:nth-child(5) { -webkit-animation-duration: 200ms }
 
 
 @-webkit-keyframes sound {

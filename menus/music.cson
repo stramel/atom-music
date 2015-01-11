@@ -1,0 +1,14 @@
+menu: [
+  label: 'Packages'
+  submenu: [
+    label: 'Music'
+    submenu: [
+      { label: 'Next',               command: 'music:next' }
+      { label: 'Open Current Track', command: 'music:open-current-track' }
+      { label: 'Pause',              command: 'music:pause' }
+      { label: 'Play',               command: 'music:play' }
+      { label: 'Previous',           command: 'music:previous' }
+      { label: 'Toggle',             command: 'music:toggle' }
+    ]
+  ]
+]

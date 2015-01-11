@@ -1,15 +1,15 @@
-RdioView = require './rdio-view'
+MusicView = require './music-view'
 
 module.exports =
   configDefaults: do ->
     configs = {}
-    for configName, configData of RdioView.CONFIGS
+    for configName, configData of MusicView.CONFIGS
       configs[configData.key] = configData.default
 
     configs
 
   activate: (state) ->
-    @rdioView = new RdioView(state.rdioViewState)
+    @musicView = new MusicView(state.musicViewState)
 
   deactivate: ->
-    @rdioView.destroy()
+    @musicView.destroy()

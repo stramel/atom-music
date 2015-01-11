@@ -1,0 +1,7 @@
+'.platform-darwin, .platform-darwin':
+#'.platform-darwin, .platform-darwin .command-palette .editor':
+  'cmd-alt-shift-right': 'music:next'
+  'cmd-alt-shift-left': 'music:previous'
+  'ctrl-alt-t': 'music:toggle'
+  'ctrl-alt-P': 'music:play'
+  'ctrl-alt-p': 'music:pause'

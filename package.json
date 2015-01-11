@@ -1,17 +1,44 @@
 {
-  "name": "Rdio",
-  "main": "./lib/rdio",
-  "version": "0.5.1",
-  "private": true,
-  "description": "Adds Rdio controls to Atom and displays the currently playing song in the status bar",
-  "repository": "https://github.com/EtienneLem/atom-rdio",
+  "name": "Atom-Music",
+  "version": "0.0.1",
+  "description": "Atom package built to display and control media players directly from Atom",
+  "keywords": [
+    "atom",
+    "spotify",
+    "music",
+    "media",
+    "spotify",
+    "vlc",
+    "rythmbox"
+  ],
+  "homepage": "https://github.com/stramel/atom-music",
+  "bugs": {
+    "url": "https://github.com/stramel/atom-music/issues"
+  },
   "license": "MIT",
+  "author": "Michael Stramel",
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stramel/atom-music.git"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "dependencies": {
+    "mpris-service": "^1.0.1"
+  },
+  "devDependencies": {
+    "apm": "0.0.1"
+  },
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {
-    "applescript": "0.2.1",
-    "open": "0.0.4",
-    "MD5": "1.2.0"
-  }
+  "activationEvents": [
+    "atom-music:play",
+    "atom-music:pause",
+    "atom-music:togglePlay",
+    "atom-music:next",
+    "atom-music:previous"
+  ]
 }
