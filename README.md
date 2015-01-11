@@ -28,12 +28,12 @@ Open Current Track
 #### Using Spotify URIs with Linux
 
 * Using Spotify (https://community.spotify.com/t5/Help-Desktop-Linux-Mac-and/start-a-playlist-from-an-URL/td-p/297)
-* Paste link into Spotify Search
+  * Paste link into Spotify Search
 * Using CLI (http://blog.gadi.cc/linux-spotify-url/)
-* `gconftool-2 -t string -s /desktop/gnome/url-handlers/spotify/command 'spotify -uri "%s"'`
-* `gconftool-2 -s /desktop/gnome/url-handlers/spotify/enabled true -t bool`
-* `gconftool-2 -s /desktop/gnome/url-handlers/spotify/needs_terminal false -t bool`
-* `gnome-open "<spotify:uri>"`
+  * `gconftool-2 -t string -s /desktop/gnome/url-handlers/spotify/command 'spotify -uri "%s"'`
+  * `gconftool-2 -s /desktop/gnome/url-handlers/spotify/enabled true -t bool`
+  * `gconftool-2 -s /desktop/gnome/url-handlers/spotify/needs_terminal false -t bool`
+  * `gnome-open "<spotify:uri>"`
 
 
 ## Credits
